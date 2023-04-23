@@ -1,0 +1,89 @@
+<!--
+    RMIT University Vietnam
+    Course: COSC2430 Web Programming
+    Semester: 2023A
+    Assessment: Assignment 1
+    Author: Nguyen Huu Quoc Huy
+    ID: 3986423
+    Acknowledgement: Acknowledge the resources that you use here. 
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Bookstore</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="icon" href="../assets/img/IconLogo.png">
+</head>
+<body>
+    <header>
+        <nav class="navbar" id="head_navbar">
+            <a href="../index.html"><img class="logo" src="../assets/img/Logo.png" alt="The book store logo"></a>
+            <input type="checkbox" id="toggle" class="hamburger_input">
+            <label class="navbar_toggler" for="toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </label>
+            <ul class="navbar_items" id="head_nav">
+                <li><a href="../index.html"><img src="../assets/emoji/home.png" alt="Home Icon" class="icon">Home</a></li>
+                <li><a href="fiction.html"><img src="../assets/emoji/ribbon.png" alt="Ribbon Icon" class="icon">Fiction</a></li>
+                <li><a href="non_fiction.html"><img src="../assets/emoji/ribbon.png" alt="Ribbon Icon" class="icon">Non-fiction</a></li>
+                <li><a href="textbooks.html"><img src="../assets/emoji/ribbon.png" alt="Ribbon Icon" class="icon">Textbooks</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <nav class="nav_breadcrumbs">
+            <ul class="breadcrumbs">
+                <li><a href="../index.html" class="breadcrumbs_links"><img src="../assets/emoji/home.png" alt="Home Icon" class="breadcrumbs_image"> Home</a></li>
+                <li><img src="../assets/emoji/next.png" alt="Arrow Icon" class="breadcrumbs_image"></li>
+                <li><a href="../pages/fiction.html" class="breadcrumbs_links"><img src="../assets/emoji/ribbon.png" alt="Ribbon Icon" class="breadcrumbs_image"> Fiction</a></li>
+                <li><img src="../assets/emoji/next.png" alt="Arrow Icon" class="breadcrumbs_image"></li>
+                <li><a href="../pages/TheAlchemist.html" class="breadcrumbs_links" id="current_page"><img src="../assets/emoji/book.png" alt="Book Icon" class="breadcrumbs_image"> The Alchemist</a></li>
+            </ul>
+        </nav>
+        <section>
+            <div class="book_detail_container">
+                <img src="../assets/img/TheAlchemist.jpg" alt="The Alchemist book cover" class="the_book_image">
+                <div class="small_book_image_container">
+                    <img src="../assets/img/TheAlchemist(1).jpg" alt="The Alchemist book photo 1">
+                    <img src="../assets/img/TheAlchemist(2).jpg" alt="The Alchemist book photo 2">
+                    <img src="../assets/img/TheAlchemist(3).jpg" alt="The Alchemist book photo 3">
+                </div>
+                <div class="price_and_button">
+                    <p><img src="../assets/emoji/tag.png" alt="price tag icon" class="icon"> $13.89</p>
+                    <button type="button" name="buy_now_button" class="buy_now_button">Buy Now</button>
+                    <button type="button" name="add_to_cart_button" onclick="alert('Added to cart!!!')" class="add_to_cart_button"><img src="../assets/emoji/red_cart.png" class="icon" alt="red cart icon">Add to cart</button>
+                </div>
+            </div>
+        </section>
+        <section class="book_description">
+            <h1>The Alchemist</h1>
+            <p>
+                Combining magic, mysticism, wisdom and wonder into an inspiring tale of self-discovery, 
+                The Alchemist has become a modern classic, selling millions of copies around the world and 
+                transforming the lives of countless readers across generations.
+            </p>
+            <p>
+                Paulo Coelho's masterpiece tells the mystical story of Santiago, an Andalusian shepherd boy who yearns to travel in search of a worldly treasure. 
+                His quest will lead him to riches far different—and far more satisfying—than he ever imagined. Santiago's journey teaches us about the essential wisdom of listening to our hearts, 
+                of recognizing opportunity and learning to read the omens strewn along life's path, and, most importantly, to follow our dreams.
+            </p>
+        </section>
+    </main>
+    <footer>
+        <nav id="footer" class="navbar">
+            <ul class="navbar_items">
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms</a></li>
+                <li><a href="#">Copyright</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+</html>

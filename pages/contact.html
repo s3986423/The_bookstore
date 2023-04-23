@@ -1,0 +1,101 @@
+<!--
+    RMIT University Vietnam
+    Course: COSC2430 Web Programming
+    Semester: 2023A
+    Assessment: Assignment 1
+    Author: Nguyen Huu Quoc Huy
+    ID: 3986423
+    Acknowledgement: Acknowledge the resources that you use here. 
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Bookstore</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="icon" href="../assets/img/IconLogo.png">
+</head>
+<body>
+    <header>
+        <nav class="navbar" id="head_navbar">
+            <a href="../index.html"><img class="logo" src="../assets/img/Logo.png" alt="The book store logo"></a>
+            <input type="checkbox" id="toggle" class="hamburger_input">
+            <label class="navbar_toggler" for="toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </label>
+            <ul class="navbar_items" id="head_nav">
+                <li><a href="../index.html"><img src="../assets/emoji/home.png" alt="Home Icon" class="icon">Home</a></li>
+                <li><a href="fiction.html"><img src="../assets/emoji/ribbon.png" alt="Ribbon Icon" class="icon">Fiction</a></li>
+                <li><a href="non_fiction.html"><img src="../assets/emoji/ribbon.png" alt="Ribbon Icon" class="icon">Non-fiction</a></li>
+                <li><a href="textbooks.html"><img src="../assets/emoji/ribbon.png" alt="Ribbon Icon" class="icon">Textbooks</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Contact Us</h1>
+        <form action="" method="post" class="contact_form">
+            <div>
+                <label for="contact_purpose">Contact purpose:</label>
+                <select id="contact_purpose" name="contact_purpose">
+                    <option value="sell_books">I want to sell books</option>
+                    <option value="buy_books">I want to buy books</option>
+                </select>
+            </div>
+            <div>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name">
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+            </div>
+            <div>
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone">
+            </div>
+            <fieldset>
+                <legend>Contact preference</legend>
+                <div>
+                <input type="checkbox" id="by_email" name="contact_preference" value="by_email"><label for="yes"> By Email</label>
+                </div>
+                <div>
+                <input type="checkbox" id="by_phone" name="contact_preference" value="by_phone"><label for="no"> By Phone</label>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Receive weekly newsletter:</legend>
+                <div>
+                    <input type="radio" id="yes" name="receive_letter" value="yes" checked>
+                    <label for="yes"> Yes</label>
+                </div>
+                <div>
+                    <input type="radio" id="no" name="receive_letter" value="yes"><label for="no"> No</label>
+                </div>
+            </fieldset>
+            <div>
+                <label for="extra_notes">Extra notes:</label>
+                <textarea id="extra_notes" name="extra_notes" rows="5" cols="50" placeholder="--Extra Notes--"></textarea>
+            </div>
+            <div id="button_container">
+                <button type="reset"><img src="../assets/emoji/undo-arrow.png" class="icon">Reset</button>
+                <button type="submit"><img src="../assets/emoji/upload.png" class="icon">Submit</button>
+            </div>
+        </form>
+    </main>
+    <footer>
+        <nav id="footer" class="navbar">
+            <ul class="navbar_items">
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms</a></li>
+                <li><a href="#">Copyright</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+</html>

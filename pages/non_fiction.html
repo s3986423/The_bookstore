@@ -1,0 +1,125 @@
+<!--
+    RMIT University Vietnam
+    Course: COSC2430 Web Programming
+    Semester: 2023A
+    Assessment: Assignment 1
+    Author: Nguyen Huu Quoc Huy
+    ID: 3986423
+    Acknowledgement: Acknowledge the resources that you use here. 
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Bookstore</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="icon" href="../assets/img/IconLogo.png">
+</head>
+<body>
+    <header>
+        <nav class="navbar" id="head_navbar">
+            <a href="../index.html"><img class="logo" src="../assets/img/Logo.png" alt="The book store logo"></a>
+            <input type="checkbox" id="toggle" class="hamburger_input">
+            <label class="navbar_toggler" for="toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </label>
+            <ul class="navbar_items" id="head_nav">
+                <li><a href="../index.html"><img src="../assets/emoji/home.png" class="icon">Home</a></li>
+                <li><a href="fiction.html"><img src="../assets/emoji/ribbon.png" alt="Ribbon Icon" class="icon">Fiction</a></li>
+                <li><a href="non_fiction.html"><img src="../assets/emoji/ribbon.png" alt="Ribbon Icon" class="icon">Non-fiction</a></li>
+                <li><a href="textbooks.html"><img src="../assets/emoji/ribbon.png" alt="Ribbon Icon" class="icon">Textbooks</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <nav class="nav_breadcrumbs">
+            <ul class="breadcrumbs">
+                <li><a href="../index.html" class="breadcrumbs_links"><img src="../assets/emoji/home.png" alt="Home Icon" class="breadcrumbs_image"> Home</a></li>
+                <li><img src="../assets/emoji/next.png" alt="Arrow Icon" class="breadcrumbs_image"></li>
+                <li><a href="../pages/fiction.html" class="breadcrumbs_links" id="current_page"><img src="../assets/emoji/ribbon.png" alt="Ribbon Icon" class="breadcrumbs_image"> Non-Fiction</a></li>
+            </ul>
+        </nav>
+        <section id="Non-fiction" class="Category_container">
+            <div id="Sub_Categories_Non_Fiction"class="Category_name">
+                <h1>Science/Technology</h1>
+            </div>
+            <div class="Books_container">
+                <div>
+                    <a href="#"></a>
+                    <img src="../assets/img/Python4Beginners.jpg" alt="Python For Beginners  book cover">
+                    <h3>Python For Beginners</h3>
+                </div>
+                <div>
+                    <a href="#"></a>
+                    <img src="../assets/img/InSearchOfSchrodingerCat.jpg" alt="In Search Of Schrodinger's Cat book cover">
+                    <h3>In Search Of<br>Schrodinger's Cat</h3>
+                </div>
+                <div>
+                    <a href="#"></a>
+                    <img src="../assets/img/BlackHoles.jpg" alt="Black Holes book cover">
+                    <h3>Black Holes</h3>
+                </div>
+            </div>
+        </section>
+        <section id="Non-fiction" class="Category_container">
+            <div id="Sub_Categories_Non_Fiction" class="Category_name">
+                <h1>Self-help</h1>
+            </div>
+            <div class="Books_container">
+                <div>
+                    <a href="#"></a>
+                    <img src="../assets/img/Quirkology.jpeg" alt="Quirkology book cover">
+                    <h3>Quirkology</h3>
+                </div>
+                <div>
+                    <a href="#"></a>
+                    <img src="../assets/img/TalkingToStrangers.jpg" alt="Talking To Strangers book cover">
+                    <h3>Talking To Strangers</h3>
+                </div>
+                <div>
+                    <a href="#"></a>
+                    <img src="../assets/img/ThePowerOfHabit.jpg" alt="The Power Of Habit book cover">
+                    <h3>The Power Of Habit</h3>
+                </div>
+            </div>
+        </section>
+        <section id="Non-fiction" class="Category_container">
+            <div id="Sub_Categories_Non_Fiction" class="Category_name">
+                <h1>Cooking & Food</h1>
+            </div>
+            <div class="Books_container">
+                <div>
+                    <a href="#"></a>
+                    <img src="../assets/img/GordonRHomeCooking.jpeg" alt="Gordon Ramsay's Home Cooking book cover">
+                    <h3>Gordon Ramsay's<br>Home Cooking</h3>
+                </div>
+                <div>
+                    <a href="#"></a>
+                    <img src="../assets/img/KitchenConfidential.jpg" alt="Kitchen Confidential book cover">
+                    <h3>Kitchen Confidential</h3>
+                </div>
+                <div>
+                    <a href="#"></a>
+                    <img src="../assets/img/BreadAndWine.jpg" alt="Bread And Wine book cover">
+                    <h3>Bread And Wine</h3>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <nav id="footer" class="navbar">
+            <ul class="navbar_items">
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms</a></li>
+                <li><a href="#">Copyright</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+</html>

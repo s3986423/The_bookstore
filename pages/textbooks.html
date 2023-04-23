@@ -1,0 +1,125 @@
+<!--
+    RMIT University Vietnam
+    Course: COSC2430 Web Programming
+    Semester: 2023A
+    Assessment: Assignment 1
+    Author: Nguyen Huu Quoc Huy
+    ID: 3986423
+    Acknowledgement: Acknowledge the resources that you use here. 
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Bookstore</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="icon" href="../assets/img/IconLogo.png">
+</head>
+<body>
+    <header>
+        <nav class="navbar" id="head_navbar">
+            <a href="../index.html"><img class="logo" src="../assets/img/Logo.png" alt="The book store logo"></a>
+            <input type="checkbox" id="toggle" class="hamburger_input">
+            <label class="navbar_toggler" for="toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </label>
+            <ul class="navbar_items" id="head_nav">
+                <li><a href="../index.html"><img src="../assets/emoji/home.png" class="icon">Home</a></li>
+                <li><a href="fiction.html"><img src="../assets/emoji/ribbon.png" alt="Ribbon Icon" class="icon">Fiction</a></li>
+                <li><a href="non_fiction.html"><img src="../assets/emoji/ribbon.png" alt="Ribbon Icon" class="icon">Non-fiction</a></li>
+                <li><a href="#"><img src="../assets/emoji/ribbon.png" alt="Ribbon Icon" class="icon">Textbooks</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <nav class="nav_breadcrumbs">
+            <ul class="breadcrumbs">
+                <li><a href="../index.html" class="breadcrumbs_links"><img src="../assets/emoji/home.png" alt="Home Icon" class="breadcrumbs_image"> Home</a></li>
+                <li><img src="../assets/emoji/next.png" alt="Arrow Icon" class="breadcrumbs_image"></li>
+                <li><a href="../pages/fiction.html" class="breadcrumbs_links" id="current_page"><img src="../assets/emoji/ribbon.png" alt="Ribbon Icon" class="breadcrumbs_image"> Textbooks</a></li>
+            </ul>
+        </nav>
+        <section id="Textbooks" class="Category_container">
+            <div id="Sub_Categories_Textbooks"class="Category_name">
+                <h1>Math & Science</h1>
+            </div>
+            <div class="Books_container">
+                <div>
+                    <a href="#"></a>
+                    <img src="../assets/img/Math.jpg" alt="Math book cover">
+                    <h3>Math</h3>
+                </div>
+                <div>
+                    <a href="#"></a>
+                    <img src="../assets/img/Physics.jpg" alt="Physics book cover">
+                    <h3>Physics</h3>
+                </div>
+                <div>
+                    <a href="#"></a>
+                    <img src="../assets/img/Sceince.jpg" alt="Science book cover">
+                    <h3>Science</h3>
+                </div>
+            </div>
+        </section>
+        <section id="Textbooks" class="Category_container">
+            <div id="Sub_Categories_Textbooks" class="Category_name">
+                <h1>Humanities</h1>
+            </div>
+            <div class="Books_container">
+                <div>
+                    <a href="#"></a>
+                    <img src="../assets/img/Literature.jpg" alt="Literature book cover">
+                    <h3>Literature</h3>
+                </div>
+                <div>
+                    <a href="#"></a>
+                    <img src="../assets/img/MedicalHumanities.jpg" alt="Medical Humanities book cover">
+                    <h3>Medical Humanities</h3>
+                </div>
+                <div>
+                    <a href="#"></a>
+                    <img src="../assets/img/PerceivingTheArts.jpg" alt="Perceiving the Arts book cover">
+                    <h3>Perceiving the Arts</h3>
+                </div>
+            </div>
+        </section>
+        <section id="Textbooks" class="Category_container">
+            <div id="Sub_Categories_Textbooks" class="Category_name">
+                <h1>Professional & Technical</h1>
+            </div>
+            <div class="Books_container">
+                <div>
+                    <a href="#"></a>
+                    <img src="../assets/img/InternationalLogistics.jpeg" alt="International Logistics book cover">
+                    <h3>International Logistics</h3>
+                </div>
+                <div>
+                    <a href="#"></a>
+                    <img src="../assets/img/SupplyMarketIntlligence.jpeg" alt="Supply Market Intlligence book cover">
+                    <h3>Supply Market Intlligence</h3>
+                </div>
+                <div>
+                    <a href="#"></a>
+                    <img src="../assets/img/AdvancedCapitalBudgeting.jpeg" alt="Advanced Capital Budgeting book cover">
+                    <h3>Advanced Capital Budgeting</h3>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <nav id="footer" class="navbar">
+            <ul class="navbar_items">
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms</a></li>
+                <li><a href="#">Copyright</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,125 @@
+<!--
+    RMIT University Vietnam
+    Course: COSC2430 Web Programming
+    Semester: 2023A
+    Assessment: Assignment 1
+    Author: Nguyen Huu Quoc Huy
+    ID: 3986423
+    Acknowledgement: Acknowledge the resources that you use here. 
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Bookstore</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="icon" href="../assets/img/IconLogo.png">
+</head>
+<body>
+    <header>
+        <nav class="navbar" id="head_navbar">
+            <a href="../index.html"><img class="logo" src="../assets/img/Logo.png" alt="The book store logo"></a>
+            <input type="checkbox" id="toggle" class="hamburger_input">
+            <label class="navbar_toggler" for="toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </label>
+            <ul class="navbar_items" id="head_nav">
+                <li><a href="../index.html"><img src="../assets/emoji/home.png" class="icon">Home</a></li>
+                <li><a href="fiction.html"><img src="../assets/emoji/ribbon.png" alt="Ribbon Icon" class="icon">Fiction</a></li>
+                <li><a href="non_fiction.html"><img src="../assets/emoji/ribbon.png" alt="Ribbon Icon" class="icon">Non-fiction</a></li>
+                <li><a href="textbooks.html"><img src="../assets/emoji/ribbon.png" alt="Ribbon Icon" class="icon">Textbooks</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <nav class="nav_breadcrumbs">
+            <ul class="breadcrumbs">
+                <li><a href="../index.html" class="breadcrumbs_links"><img src="../assets/emoji/home.png" alt="Home Icon" class="breadcrumbs_image"> Home</a></li>
+                <li><img src="../assets/emoji/next.png" alt="Arrow Icon" class="breadcrumbs_image"></li>
+                <li><a href="../pages/fiction.html" class="breadcrumbs_links" id="current_page"><img src="../assets/emoji/ribbon.png" alt="Ribbon Icon" class="breadcrumbs_image"> Fiction</a></li>
+            </ul>
+        </nav>
+        <section id="Fiction" class="Category_container">
+            <div id="Sub_Categories_Fiction"class="Category_name">
+                <h1>Literary Fiction</h1>
+            </div>
+            <div class="Books_container">
+                <div>
+                    <a href="TheAlchemist.html"></a>
+                    <img src="../assets/img/TheAlchemist.jpg" alt="The Alchemist book cover">
+                    <h3>The Alchemist</h3>
+                </div>
+                <div>
+                    <a href="#"></a>
+                    <img src="../assets/img/NormalPeople.jpg" alt="Normal People book cover">
+                    <h3>Normal People</h3>
+                </div>
+                <div>
+                    <a href="#"></a>
+                    <img src="../assets/img/aManCalledOve.jpg" alt="A Man Called Ove book cover">
+                    <h3>A Man Called Ove</h3>
+                </div>
+            </div>
+        </section>
+        <section id="Fiction" class="Category_container">
+            <div id="Sub_Categories_Fiction" class="Category_name">
+                <h1>Science Fiction</h1>
+            </div>
+            <div class="Books_container">
+                <div>
+                    <a href="#"></a>
+                    <img src="../assets/img/Dune.jpg" alt="Dune book cover">
+                    <h3>Dune</h3>
+                </div>
+                <div>
+                    <a href="#"></a>
+                    <img src="../assets/img/TheForgottenChronicles.jpg" alt="The Forgotten Chronicles book cover">
+                    <h3>The Forgotten<br>Chronicles</h3>
+                </div>
+                <div>
+                    <a href="#"></a>
+                    <img src="../assets/img/ChildrenOfRuin.jpg" alt="Children Of Ruin book cover">
+                    <h3>Children Of Ruin</h3>
+                </div>
+            </div>
+        </section>
+        <section id="Fiction" class="Category_container">
+            <div id="Sub_Categories_Fiction" class="Category_name">
+                <h1>Mystery/Thriller</h1>
+            </div>
+            <div class="Books_container">
+                <div>
+                    <a href="#"></a>
+                    <img src="../assets/img/Random.jpg" alt="Random book cover">
+                    <h3>Random</h3>
+                </div>
+                <div>
+                    <a href="#"></a>
+                    <img src="../assets/img/TheFalcon.jpg" alt="The Falcon book cover">
+                    <h3>The Falcon</h3>
+                </div>
+                <div>
+                    <a href="#"></a>
+                    <img src="../assets/img/TheLastOrphan.jpg" alt="The Last Orphan book cover">
+                    <h3>The Last Orphan</h3>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <nav id="footer" class="navbar">
+            <ul class="navbar_items">
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms</a></li>
+                <li><a href="#">Copyright</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+</html>

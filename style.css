@@ -1,0 +1,458 @@
+body {
+    font-family: sans-serif;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
+.navbar {
+    position: relative;
+    background-color: #B9F3FC;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    height: 50px;
+    width: 100%;
+}
+.logo {
+    height: 50px;
+}
+.navbar_items {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    list-style-type: none;
+    margin: 0px 0px 0px 0px;
+    padding-left: 0px;
+    width: 50%;
+    height: 100%;
+}
+.navbar_items > li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 25%;
+    height: 100%;
+}
+.navbar_items > li > a {
+    text-decoration: none;
+    font-size: auto;
+    color: #000000;
+    text-align: center;
+}
+#head_navbar {
+    z-index: 1000;
+}
+.navbar_items > li:hover {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: center;
+    background-color: #93C6E7;
+    height: 100%;
+    box-shadow: 0px 0px 5px -1px rgba(0,0,0,0.75);
+    transition: 0.5s;
+}
+.navbar_toggler {
+    display: none;
+    height: min-content;
+    margin: 15px 15px 0px 0px;
+    cursor: pointer;
+}
+.navbar_toggler .bar {
+    width: 40px;
+    height: 5px;
+    margin-bottom: 10px;
+    background: black;
+    border-radius: 30px;
+    transition: 0.5s;
+}
+.hamburger_input {
+    display: none;
+}
+.hamburger_input:checked ~ #head_nav {
+    transform: translateY(0);
+}
+#footer {
+    justify-content: center;
+    margin: 10px 0px 0px 0px;
+}
+#footer > ul {
+    height: 100%;
+}
+main > video {
+    width: 70%;
+    height: auto;
+}
+.Category_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 10px 0px 0px 0px;
+    width: 70%;
+}
+.Category_container > h1 {
+    text-align: center;
+    font-size: x-large;
+}
+.Books_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    width: 80%;
+}
+.Books_container > div {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 30%;
+}
+.Books_container > div > a {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.Books_container > div > a:hover {
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+    transition: 0.5s;
+}
+.Books_container > div > img {
+    width: 75%;
+    height: 75%;
+}
+.Books_container > div > h3 {
+    text-align: center;
+    margin: 10px 0px;
+}
+#Fiction {
+    background-color: #93BFCF;
+}
+#Non-fiction {
+    background-color: #EEE9DA;
+}
+#Textbooks {
+    background-color: #BDCDD6;
+}
+.Category_name {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 200px;
+    height: 40px;
+    margin-top: 10px;
+    padding-bottom: 20px;
+}
+.Category_name > a {
+    text-decoration: none;
+    color: #000000;
+    width: 100%;
+    text-align: center;
+}
+.Category_name:hover {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 200px;
+    height: 40px;
+    padding-bottom: 20px;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+    transition: 0.5s;
+}
+#Category_Fiction:hover {
+    background-color: #B9F3FC;
+    transition: 0.5s;
+}
+#Category_Non-Fiction:hover {
+    background-color: #93BFCF;
+    transition: 0.5s;
+}
+#Category_Textbooks:hover {
+    background-color: #EEE9DA;
+    transition: 0.5s;
+}
+#Sub_Categories_Fiction {
+    border-radius: 150px 0px 150px 0px;
+    background-color: #B9F3FC;
+    width: 325px;
+    box-shadow: none;
+}
+#Sub_Categories_Non_Fiction {
+    border-radius: 150px 0px 150px 0px;
+    background-color: #93BFCF;
+    width: 325px;
+    box-shadow: none;
+}
+#Sub_Categories_Textbooks {
+    border-radius: 150px 0px 150px 0px;
+    background-color: #EEE9DA;
+    width: 325px;
+    box-shadow: none;
+}
+.icon {
+    width: 15%;
+    margin: 0px 5px 0px 0px;
+}
+.breadcrumbs {
+    padding: 0px;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    height: 20px;
+}
+.breadcrumbs_image {
+    height: 90%;
+}
+.breadcrumbs_links {
+    text-decoration: none;
+    color: gray;
+    height: 100%;
+}
+#current_page {
+    color: cornflowerblue;
+    font-weight: bold;
+}
+.book_detail_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    height: 350px;
+    margin: 10px 0px 10px 0px;
+}
+.the_book_image {
+    width: 20%;
+    height: 100%;
+}
+.small_book_image_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0px 10px 0px 10px;
+}
+.small_book_image_container > img {
+    height: 30%;
+}
+.price_and_button {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 25%;
+
+}
+.price_and_button > p {
+    font-size: 50px;
+    font-weight: bold;
+    color: #C92127;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.buy_now_button {
+    color: #ffffff;
+    background-color: #c92127;
+    font-size: 20px;
+    border: 0px solid #2d63c8;
+    border-radius: 15px;
+    padding: 18px 53px;
+    width: 250px;
+    cursor: pointer
+}
+.buy_now_button:hover {
+    color: #ffffff;
+    background-color: #ad1a1a;
+    transition: 0.5s;
+}
+.add_to_cart_button {
+    color: #c92127;
+	background-color: #ffffff;
+	font-size: 20px;
+	border: 3px solid #c92127;
+	border-radius: 15px;
+	padding: 15px 50px;
+    width: 250px;
+	cursor: pointer
+}
+.add_to_cart_button:hover {
+    border: 3px solid #ad1a1a;
+    color: #ad1a1a;
+}
+.book_description {
+    width: 65%;
+}
+.contact_form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 30%;
+    height: 500px;
+    padding: 30px 50px 20px 50px;
+    background-color: #B9F3FC;
+}
+.contact_form > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    margin: 10px 0px 0px 0px;
+}
+.contact_form > fieldset {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    margin: 10px 0px 0px 0px;
+}
+#button_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 10%;
+}
+#button_container > button {
+    border-radius: 0px;
+    border: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    height: 100%;
+    background-color: #79d5e3;
+}
+#button_container > button:hover {
+    cursor: pointer;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+}
+#submit_btn {
+    width: 8%;
+}
+@media screen and (max-width: 960px) {
+    #head_navbar {
+        height: 60px;
+    }
+    #head_navbar > a > img {
+        height: 100%;
+    }
+    #head_nav {
+        display: grid;
+        position: absolute;
+        background: #B9F3FC;
+        transform: translateY(-200%);
+        transition: 0.5s;
+        width: 100%;
+        top: 60px;
+        left: 0;
+        height: auto;
+    }
+    #head_nav > li {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        margin: 20px 0px;
+    }
+    #head_nav > li:hover {
+        width: 100%;
+    }
+    #head_nav > li > a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: xx-large;
+    }
+    #head_nav > li > a > img {
+        width: 10%;
+    }
+    .navbar_toggler {
+        display: grid !important;
+    }
+    .Books_container {
+        flex-direction: column;
+    }
+    .Books_container > div {
+        width: 100%;
+        margin: 5px 0px;
+    }
+    .Category_container {
+        padding-bottom: 10px;
+    }
+    .book_detail_container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+        height: auto;
+        width: 100%;
+    }
+    .the_book_image {
+        width: 50%;
+    }
+    .small_book_image_container {
+        flex-direction: row;
+        height: auto;
+        justify-content: space-between;
+        width: 80%;
+        margin: 10px 0px;
+    }
+    .small_book_image_container > img {
+        width: 20%;
+        height: 50%;
+        height: auto;
+    }
+    .price_and_button {
+        width: 100%;
+    }
+    .price_and_button > p {
+        margin: 5px;
+        font-size: xx-large;
+    }
+    .price_and_button > button {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        font-size: x-large;
+        width: 80%;
+        height: 30%;
+        margin: 10px 0px;
+    }
+    .book_description {
+        width: 100%;
+    }
+    .contact_form {
+        width: 60%;
+    }
+    .contact_form > div {
+        flex-direction: column;
+        justify-content: space-evenly;
+        width: 100%;
+    }
+    #footer > ul {
+        width: 100%;
+    }
+    #footer > ul > li {
+        width: 20%;
+    }
+    #footer > ul > li > a {
+        font-size: small;
+    }
+}
